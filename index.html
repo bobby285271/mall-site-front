@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Web 前端作业（2）- 容加林</title>
+	<title>美食 - 漫步时尚广场</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
 	<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
@@ -14,47 +14,10 @@
 <!--By 容加林 20192005144-->
 
 <body>
-
-	<nav class="navbar navbar-expand-sm bg-warning navbar-dark">
-		<a class="navbar-brand" href="index.html">漫步时尚广场</a>
-		<ul class="navbar-nav">
-			<li class="nav-item"><a class="nav-link active" href="index.html">首页</a></li>
-			<li class="nav-item"><a class="nav-link" href="food.html">美食</a></li>
-			<li class="nav-item"><a class="nav-link" href="#">今日新单</a></li>
-			<li class="nav-item"><a class="nav-link" href="#">团购</a></li>
-			<li class="nav-item"><a class="nav-link" href="#">身边外卖</a></li>
-			<li class="nav-item"><a class="nav-link" href="#">休闲娱乐</a></li>
-			<li class="nav-item"><a class="nav-link" href="#">生活服务</a></li>
-		</ul>
-	</nav>
-
-	<div class="row">
-		<p></p>
-	</div>
-
+	<div id="headnav"></div>
 	<div class="row">
 		<div class="col-md-1 offset-md-1">
-			<div class="list-group">
-				<h4 class="list-group-item list-group-item-warning">按分类</h4>
-				<a href="#" class="list-group-item list-group-item-action">火锅</a>
-				<a href="#" class="list-group-item list-group-item-action">日韩料理</a>
-				<a href="#" class="list-group-item list-group-item-action">西餐</a>
-				<a href="#" class="list-group-item list-group-item-action">小吃快餐</a>
-				<a href="#" class="list-group-item list-group-item-action">自助餐</a>
-				<h4 class="list-group-item list-group-item-warning">按地区</h4>
-				<a href="#" class="list-group-item list-group-item-action">市北区</a>
-				<a href="#" class="list-group-item list-group-item-action">市南区</a>
-				<a href="#" class="list-group-item list-group-item-action">李沧区</a>
-				<a href="#" class="list-group-item list-group-item-action">崂山区</a>
-				<a href="#" class="list-group-item list-group-item-action">黄岛区</a>
-				<h4 class="list-group-item list-group-item-warning">按人数</h4>
-				<a href="#" class="list-group-item list-group-item-action">单人餐</a>
-				<a href="#" class="list-group-item list-group-item-action">双人餐</a>
-				<a href="#" class="list-group-item list-group-item-action">3-4 人</a>
-				<a href="#" class="list-group-item list-group-item-action">5-6 人</a>
-				<a href="#" class="list-group-item list-group-item-action">7-8 人</a>
-				<a href="#" class="list-group-item list-group-item-action">10 人以上</a>
-			</div>
+			<div id="sidenav"></div>
 		</div>
 		<div class="col-md-9">
 			<div class="row">
@@ -357,9 +320,13 @@
 				</div>
 			</div>
 		</div>
-
 	</div>
-
 </body>
+
+<script>
+	$("#headnav").load("assets/headnav.html");
+	$("#sidenav").load("assets/sidenav.html");
+</script>
+
 
 </html>
