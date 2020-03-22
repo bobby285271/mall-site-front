@@ -4,10 +4,12 @@
 <head>
     <meta charset="utf-8">
     <title>注册 - 漫步时尚广场</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+
 </head>
 
 <!--By 容加林 20192005144-->
@@ -22,11 +24,100 @@
             <div class="card">
                 <div class="card-header">
                     <h4>
-                        <font color="green">注册</font>
+                        <font color="green">用户注册</font>
                     </h4>
                 </div>
                 <div class="card-body">
+                    <form action="#" method="GET">
+                        <div class="input-group mb-3 ">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">用户账户</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="请输入用户名" id="usr" name="username"
+                                required="">
+                        </div>
 
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">邮箱地址</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="请输入你的邮箱地址" id="mail" name="email"
+                                required="">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">设置密码</span>
+                            </div>
+                            <input type="password" class="form-control" placeholder="请输入你的密码" id="passwd1" required=""
+                                name="password1">
+                            <input type="password" class="form-control" placeholder="请再输入一次密码" id="passwd2" required=""
+                                name="password2">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">真实姓名</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="请输入您的真实姓名" id="name" name="realname"
+                                required="">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">上传头像</span>
+                            </div>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="userimg" name="userimage" required="">
+                                <label class="custom-file-label" for="userimg">选择一个文件</label>
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">手机号码</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="请输入您的手机号码" id="phone" name="phonenum"
+                                required="">
+                        </div>
+                        <hr class="mb-4">
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <label for="country">省份</label>
+                                <select class="custom-select d-block w-100" id="state" name="state" required="">
+                                    <option value="">请选择一项</option>
+                                    <option>广东省</option>
+                                    <option>其它</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="state">城市</label>
+                                <select class="custom-select d-block w-100" id="city" name="city" required="">
+                                    <option value="">请选择一项</option>
+                                    <option>广州市</option>
+                                    <option>其它</option>
+                                </select>
+
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="zip">地址</label>
+                                <input type="text" class="form-control" id="address" name="address" placeholder=""
+                                    required="">
+                            </div>
+                        </div>
+                        <hr class="mb-4">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="agree-tk" name="agree-tk">
+                            <label class="custom-control-label" for="agree-tk">本人同意漫步时尚广场最终用户许可协议。</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="receive-zx" name="receive-zx">
+                            <label class="custom-control-label" for="receive-zx">本人愿意接收漫步时尚广场购物类相关资讯。</label>
+                        </div>
+                        <hr class="mb-4">
+
+                        <button type="submit" class="btn btn-block btn-warning">
+                            <font color="white">提&nbsp;&nbsp;&nbsp;交</font>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
