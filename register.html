@@ -117,6 +117,27 @@
                         </div>
                         <hr class="mb-4">
 
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">背景颜色</span>
+                            </div>
+                            <input type="color" class="form-control" id="bgcolor" name="bgcolor" value="#ffffff"
+                                onchange="document.body.style.backgroundColor = this.value;">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-8">
+                                <label for="customRange">你有多大概率推荐本商城给你的朋友？</label>
+                                <output name="rank">50</output>%
+                            </div>
+                            <div class="col-md-4">
+                                <input type="range" class="custom-range" min=0 max=100 step=1 id="recommendfriends"
+                                    name="recommendfriends" onchange="rank.value=recommendfriends.value;">
+                            </div>
+                        </div>
+
+                        <hr class="mb-4">
+
                         <button type="submit" class="btn btn-block btn-warning">
                             <font color="white">提交</font>
                         </button>
